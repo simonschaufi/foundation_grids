@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT type="array">
+				<TCEforms>
+					<sheetTitle>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el type="array">
+					
+					<expandFirst>
+						<TCEforms>
+							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.accordion.expandFirst</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</expandFirst>
+					
+					<!--<rowclass>
+						<TCEforms>
+							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.label.style</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.label.none</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</rowclass>-->
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,962 @@
+/**
+ * General config
+ */
+# Remove 2nd column from defaultGridSetup, colpos 101, 102 are used
+lib.gridelements.defaultGridSetup.columns.2 >
+
+/**
+ * Grid definitions
+ */
+lib.foundation_grids {
+
+	# Column grids
+	2cols < lib.gridelements.defaultGridSetup
+	2cols {
+		wrap = <div class="row">|</div>
+		columns {
+			101 < .default
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class} column">|</div>
+			101.wrap >
+			102 < .101
+			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class} column">|</div>
+		}
+	}
+	3cols < .2cols
+	3cols {
+		columns {
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class} column">|</div>
+			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class} column">|</div>
+			103 < .101
+			103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class} column">|</div>
+		}
+	}
+	4cols < .3cols
+	4cols {
+		columns {
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class} column">|</div>
+			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class} column">|</div>
+			103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class} column">|</div>
+			104 < .101
+			104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class} column">|</div>
+		}
+	}
+
+	# Tabs
+	simpleTabs < lib.gridelements.defaultGridSetup
+	simpleTabs {
+		outerWrap = <div class="{field:flexform_style}">|</div>
+		outerWrap.insertData = 1
+
+		prepend = CONTENT
+		prepend {
+			table = tt_content
+			select {
+				selectFields = header, uid, tx_gridelements_container, sorting
+				where = 1=1
+				andWhere = tx_gridelements_container={field:uid}
+				andWhere.insertData = 1
+				orderBy = sorting
+			}
+			wrap = <ul class="nav nav-tabs">|</ul>
+			renderObj = COA
+			renderObj {
+				5 = LOAD_REGISTER
+				5 {
+					TabCount.cObject = TEXT
+					TabCount.cObject.data = register:TabCount
+					TabCount.cObject.wrap = |+1
+					TabCount.prioriCalc = intval
+				}
+				10 = TEXT
+				10 {
+					field = header
+					insertData = 1
+					wrap = <a href="#tab-{field:uid}" role="tab" data-toggle="tab">|</a>
+					outerWrap.cObject = CASE
+					outerWrap.cObject {
+						key.data = register:TabCount
+						default = TEXT
+						default.value = <li id="tab-element-{field:uid}">|</li>
+						1 = TEXT
+						1.value = <li class="active" id="tab-element-{field:uid}">|</li>
+					}
+				}
+			}
+		}
+
+		columns {
+			101 < .default
+			101 {
+				wrap = <div class="tab-content">|</div>
+				renderObj {
+					5 = LOAD_REGISTER
+					5 {
+						TabCount2.cObject = TEXT
+						TabCount2.cObject.data = register:TabCount2
+						TabCount2.cObject.wrap = |+1
+						TabCount2.prioriCalc = intval
+					}
+					stdWrap.insertData = 1
+					stdWrap.outerWrap.cObject = CASE
+					stdWrap.outerWrap.cObject {
+						key.data = register:TabCount2
+						default = TEXT
+						default.value = <div class="tab-pane fade" id="tab-{field:uid}">|</div>
+						1 = TEXT
+						1.value = <div class="tab-pane fade active in" id="tab-{field:uid}">|</div>
+					}
+					# don't show headers in tabs
+					#20 =< tt_content
+					20 < tt_content
+					20 {
+						text.10 >
+						image.10 >
+						textpic.10 >
+						uploads.10 >
+						table.10 >
+						multimedia.10 >
+						media.10 >
+						mailform.10 >
+						menu.10 >
+						videoce_videocontent.10 >
+					}
+				}
+			}
+		}
+	}
+
+	4tabs < lib.gridelements.defaultGridSetup
+	4tabs {
+		# style wrap
+		outerWrap = <div class="{field:flexform_style}">|</div>
+		outerWrap.insertData = 1
+
+		prepend = COA
+		prepend.wrap = <ul class="nav nav-tabs" role="tablist">|</ul>
+		prepend {
+			10 = TEXT
+			10.value = <li class="active"><a href="#tab1-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle1}</a></li>
+			10.insertData = 1
+			20 < .10
+			20.value = <li><a href="#tab2-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle2}</a></li>
+			20.if.isTrue.field = flexform_tabTitle2
+			30 < .10
+			30.value = <li><a href="#tab3-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle3}</a></li>
+			30.if.isTrue.field = flexform_tabTitle3
+			40 < .10
+			40.value = <li><a href="#tab4-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle4}</a></li>
+			40.if.isTrue.field = flexform_tabTitle4
+		}
+		wrap = <div class="tab-content">|</div>
+		columns {
+			101 < .default
+			101.wrap = <div class="tab-pane fade active in" id="tab1-{field:uid}">|</div>
+			101.wrap.insertData = 1
+			102 < .101
+			102.wrap = <div class="tab-pane fade" id="tab2-{field:uid}">|</div>
+			102.if.isTrue.field = flexform_tabTitle2
+			103 < .101
+			103.wrap = <div class="tab-pane fade" id="tab3-{field:uid}">|</div>
+			103.if.isTrue.field = flexform_tabTitle3
+			104 < .101
+			104.wrap = <div class="tab-pane fade" id="tab4-{field:uid}">|</div>
+			104.if.isTrue.field = flexform_tabTitle4
+		}
+	}
+
+	6tabs < .4tabs
+	6tabs {
+		prepend {
+			50 < .10
+			50.value = <li><a href="#tab5-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle5}</a></li>
+			50.if.isTrue.field = flexform_tabTitle5
+
+			60 < .10
+			60.value = <li><a href="#tab6-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle6}</a></li>
+			60.if.isTrue.field = flexform_tabTitle6
+		}
+		columns {
+			105 < .101
+			105.wrap = <div class="tab-pane fade" id="tab5-{field:uid}">|</div>
+			105.if.isTrue.field = flexform_tabTitle5
+
+			106 < .101
+			106.wrap = <div class="tab-pane fade" id="tab6-{field:uid}">|</div>
+			106.if.isTrue.field = flexform_tabTitle6
+		}
+	}
+
+	# Accordion
+	accordion  < lib.gridelements.defaultGridSetup
+	accordion {
+		# wrap around all
+		outerWrap {
+			stdWrap.cObject = CASE
+			stdWrap.cObject {
+				key.field = flexform_rowclass
+				default = TEXT
+				default.value = <ul class="accordion" data-accordion id="accordion-{field:uid}">|</ul>
+				#acc = TEXT
+				#acc.value = <div class="tabs"><div class="accordion" id="accordion-{field:uid}">|</div></div>
+			}
+			insertData = 1
+		}
+
+		columns {
+			101 < .default
+			101 {
+				renderObj {
+					stdWrap.outerWrap = <li class="accordion-navigation">|</li>
+
+					# thanks to Josef Körner (brandical.de) for simplification
+					5 = LOAD_REGISTER
+					5 {
+						accordionCount {
+							cObject = TEXT
+							cObject.data = register:accordionCount
+							cObject.wrap = |+1
+							prioriCalc = intval
+						}
+					}
+					10 = TEXT
+					10 {
+						field = header
+						insertData = 1
+						wrap = <a class="accordion-toggle register-{register:accordionCount}" href="#panel-{field:uid}">|</a><div id="panel-{field:uid}" class="content">
+						wrap {
+							# expand first panel
+							override = <a class="accordion-toggle register-{register:accordionCount}" href="#panel-{field:uid}">|</a><div id="panel-{field:uid}" class="content active">
+							override {
+								if {
+									# value from parent flexform field
+									isTrue.data = field:parentgrid_pi_flexform|data|sDEF|lDEF|expandFirst|vDEF
+									# AND
+									value = 1
+									equals.data = register:accordionCount
+								}
+							}
+						}
+					}
+					# don't show headers in accordion
+					#20 =< tt_content
+					20 < tt_content
+					20 {
+						text.10 >
+						image.10 >
+						textpic.10 >
+						uploads.10 >
+						table.10 >
+						multimedia.10 >
+						media.10 >
+						mailform.10 >
+						menu.10 >
+						videoce_videocontent.10 >
+					}
+					30 = TEXT
+					30.wrap = |</div>
+				}
+			}
+		}
+	}
+	
+	# Slick
+	slick < lib.gridelements.defaultGridSetup
+	slick {
+		columns {
+			101 < .default
+			101 {
+				dataWrap = <div class="slickslider" id="slickslider{field:uid}">|</div>
+			}
+		}
+
+		/*
+		jsFooterInline.cObject = COA
+		jsFooterInline.cObject {
+			wrap (
+			( function($) {
+				$(document).ready(function() {|});
+			}) (jQuery);
+			)
+
+			10 = TEXT
+			10 {
+				field = uid
+				wrap = $('#slickslider|').slick({
+			}
+
+			30 = COA
+			30 {
+				# https://forge.typo3.org/issues/70483
+				stdWrap.substring = 0,-1
+
+				1 = TEXT
+				1 {
+					wrap = accessibility:|,
+					field = flexform_accessibility
+					fieldRequired = flexform_accessibility
+				}
+				2 = TEXT
+				2 {
+					wrap = adaptiveHeight:|,
+					field = flexform_adaptiveHeight
+					fieldRequired = flexform_adaptiveHeight
+				}
+				3 = TEXT
+				3 {
+					wrap = autoplay:|,
+					field = flexform_autoplay
+					fieldRequired = flexform_autoplay
+				}
+				4 = TEXT
+				4 {
+					wrap = autoplaySpeed:|,
+					field = flexform_autoplaySpeed
+					fieldRequired = flexform_autoplaySpeed
+				}
+				5 = TEXT
+				5 {
+					wrap = arrows:|,
+					field = flexform_arrows
+					fieldRequired = flexform_arrows
+				}
+				6 = TEXT
+				6 {
+					wrap = asNavFor:'|',
+					field = flexform_asNavFor
+					fieldRequired = flexform_asNavFor
+				}
+				7 = TEXT
+				7 {
+					wrap = appendArrows:'|',
+					field = flexform_appendArrows
+					fieldRequired = flexform_appendArrows
+				}
+				8 = TEXT
+				8 {
+					// TODO: html or object?
+					wrap = prevArrow:|,
+					field = flexform_prevArrow
+					fieldRequired = flexform_prevArrow
+				}
+				9 = TEXT
+				9 {
+					// TODO: html or object?
+					wrap = nextArrow:|,
+					field = flexform_nextArrow
+					fieldRequired = flexform_nextArrow
+				}
+				10 = TEXT
+				10 {
+					wrap = centerMode:|,
+					field = flexform_centerMode
+					fieldRequired = flexform_centerMode
+				}
+				11 = TEXT
+				11 {
+					wrap = centerPadding:'|',
+					field = flexform_centerPadding
+					fieldRequired = flexform_centerPadding
+				}
+				12 = TEXT
+				12 {
+					wrap = cssEase:'|',
+					field = flexform_cssEase
+					fieldRequired = flexform_cssEase
+				}
+				13 = TEXT
+				13 {
+					wrap = customPaging:|,
+					field = flexform_customPaging
+					fieldRequired = flexform_customPaging
+				}
+				14 = TEXT
+				14 {
+					wrap = dots:|,
+					field = flexform_dots
+					fieldRequired = flexform_dots
+				}
+				15 = TEXT
+				15 {
+					wrap = draggable:|,
+					field = flexform_draggable
+					fieldRequired = flexform_draggable
+				}
+				16 = TEXT
+				16 {
+					wrap = fade:|,
+					field = flexform_fade
+					fieldRequired = flexform_fade
+				}
+				17 = TEXT
+				17 {
+					wrap = focusOnSelect:|,
+					field = flexform_focusOnSelect
+					fieldRequired = flexform_focusOnSelect
+				}
+				18 = TEXT
+				18 {
+					wrap = easing:'|',
+					field = flexform_easing
+					fieldRequired = flexform_easing
+				}
+				19 = TEXT
+				19 {
+					wrap = edgeFriction:|,
+					field = flexform_edgeFriction
+					fieldRequired = flexform_edgeFriction
+				}
+				20 = TEXT
+				20 {
+					wrap = infinite:|,
+					field = flexform_infinite
+					fieldRequired = flexform_infinite
+				}
+				21 = TEXT
+				21 {
+					wrap = initialSlide:|,
+					field = flexform_initialSlide
+					fieldRequired = flexform_initialSlide
+				}
+				22 = TEXT
+				22 {
+					wrap = lazyLoad:'|',
+					field = flexform_lazyLoad
+					fieldRequired = flexform_lazyLoad
+				}
+				23 = TEXT
+				23 {
+					wrap = pauseOnHover:|,
+					field = flexform_pauseOnHover
+					fieldRequired = flexform_pauseOnHover
+				}
+				24 = TEXT
+				24 {
+					wrap = pauseOnDotsHover:|,
+					field = flexform_pauseOnDotsHover
+					fieldRequired = flexform_pauseOnDotsHover
+				}
+				25 = TEXT
+				25 {
+					wrap = respondTo:'|',
+					field = flexform_respondTo
+					fieldRequired = flexform_respondTo
+				}
+				26 = TEXT
+				26 {
+					wrap = responsive:|,
+					field = flexform_responsive
+					fieldRequired = flexform_responsive
+				}
+				27 = TEXT
+				27 {
+					wrap = rows:|,
+					field = flexform_rows
+					fieldRequired = flexform_rows
+				}
+				28 = TEXT
+				28 {
+					wrap = slide:|,
+					field = flexform_slide
+					fieldRequired = flexform_slide
+				}
+				29 = TEXT
+				29 {
+					wrap = slidesPerRow:|,
+					field = flexform_slidesPerRow
+					fieldRequired = flexform_slidesPerRow
+				}
+				30 = TEXT
+				30 {
+					wrap = slidesToShow:|,
+					field = flexform_slidesToShow
+					fieldRequired = flexform_slidesToShow
+				}
+				31 = TEXT
+				31 {
+					wrap = slidesToScroll:|,
+					field = flexform_slidesToScroll
+					fieldRequired = flexform_slidesToScroll
+				}
+				32 = TEXT
+				32 {
+					wrap = speed:|,
+					field = flexform_speed
+					fieldRequired = flexform_speed
+				}
+				33 = TEXT
+				33 {
+					wrap = swipe:|,
+					field = flexform_swipe
+					fieldRequired = flexform_swipe
+				}
+				34 = TEXT
+				34 {
+					wrap = swipeToSlide:|,
+					field = flexform_swipeToSlide
+					fieldRequired = flexform_swipeToSlide
+				}
+				35 = TEXT
+				35 {
+					wrap = touchMove:|,
+					field = flexform_touchMove
+					fieldRequired = flexform_touchMove
+				}
+				36 = TEXT
+				36 {
+					wrap = touchThreshold:|,
+					field = flexform_touchThreshold
+					fieldRequired = flexform_touchThreshold
+				}
+				37 = TEXT
+				37 {
+					wrap = useCSS:|,
+					field = flexform_useCSS
+					fieldRequired = flexform_useCSS
+				}
+				38 = TEXT
+				38 {
+					wrap = variableWidth:|,
+					field = flexform_variableWidth
+					fieldRequired = flexform_variableWidth
+				}
+				39 = TEXT
+				39 {
+					wrap = vertical:|,
+					field = flexform_vertical
+					fieldRequired = flexform_vertical
+				}
+				40 = TEXT
+				40 {
+					wrap = verticalSwiping:|,
+					field = flexform_verticalSwiping
+					fieldRequired = flexform_verticalSwiping
+				}
+				41 = TEXT
+				41 {
+					wrap = rtl:|,
+					field = flexform_rtl
+					fieldRequired = flexform_rtl
+				}
+			}
+
+			40 = TEXT
+			40.value = });
+		}
+		*/
+
+		# wait until https://forge.typo3.org/issues/70924 is merged
+		postUserFunc = Simonschaufi\FoundationGrids\Userfunction\JsFooterInline->jsFooterInline
+		postUserFunc {
+			uid.field = uid
+
+			jsFooterInline = COA
+			jsFooterInline {
+				wrap = (function($){$(document).ready(function(){|});})(jQuery);
+
+				10 = TEXT
+				10 {
+					field = uid
+					wrap = $('#slickslider|').slick({
+				}
+
+				30 = COA
+				30 {
+					# https://forge.typo3.org/issues/70483
+					stdWrap.substring = 0,-1
+
+					1 = TEXT
+					1 {
+						value = accessibility:false,
+						if.isFalse.field = flexform_accessibility
+					}
+					2 = TEXT
+					2 {
+						wrap = adaptiveHeight:|,
+						field = flexform_adaptiveHeight
+						fieldRequired = flexform_adaptiveHeight
+					}
+					3 = TEXT
+					3 {
+						wrap = autoplay:|,
+						field = flexform_autoplay
+						fieldRequired = flexform_autoplay
+					}
+					4 = TEXT
+					4 {
+						wrap = autoplaySpeed:|,
+						field = flexform_autoplaySpeed
+						fieldRequired = flexform_autoplaySpeed
+						if {
+							value = 3000
+							equals.field = flexform_autoplaySpeed
+							negate = 1
+						}
+					}
+					5 = TEXT
+					5 {
+						value = arrows:false,
+						fieldRequired = flexform_arrows
+						if.isFalse.field = flexform_arrows
+					}
+					6 = TEXT
+					6 {
+						wrap = asNavFor:'|',
+						field = flexform_asNavFor
+						fieldRequired = flexform_asNavFor
+					}
+					7 = TEXT
+					7 {
+						wrap = appendArrows:'|',
+						field = flexform_appendArrows
+						fieldRequired = flexform_appendArrows
+					}
+					8 = TEXT
+					8 {
+						// TODO: html or object?
+						wrap = prevArrow:|,
+						field = flexform_prevArrow
+						fieldRequired = flexform_prevArrow
+					}
+					9 = TEXT
+					9 {
+						// TODO: html or object?
+						wrap = nextArrow:|,
+						field = flexform_nextArrow
+						fieldRequired = flexform_nextArrow
+					}
+					10 = TEXT
+					10 {
+						wrap = centerMode:|,
+						field = flexform_centerMode
+						fieldRequired = flexform_centerMode
+					}
+					11 = TEXT
+					11 {
+						wrap = centerPadding:'|',
+						field = flexform_centerPadding
+						fieldRequired = flexform_centerPadding
+					}
+					12 = TEXT
+					12 {
+						wrap = cssEase:'|',
+						field = flexform_cssEase
+						fieldRequired = flexform_cssEase
+					}
+					13 = TEXT
+					13 {
+						wrap = customPaging:|,
+						field = flexform_customPaging
+						fieldRequired = flexform_customPaging
+					}
+					14 = TEXT
+					14 {
+						value = dots:true,
+						fieldRequired = flexform_dots
+					}
+					15 = TEXT
+					15 {
+						wrap = draggable:false,
+						fieldRequired = flexform_draggable
+						if.isFalse.field = flexform_draggable
+					}
+					16 = TEXT
+					16 {
+						wrap = fade:|,
+						field = flexform_fade
+						fieldRequired = flexform_fade
+					}
+					17 = TEXT
+					17 {
+						wrap = focusOnSelect:|,
+						field = flexform_focusOnSelect
+						fieldRequired = flexform_focusOnSelect
+					}
+					18 = TEXT
+					18 {
+						wrap = easing:'|',
+						field = flexform_easing
+						fieldRequired = flexform_easing
+					}
+					19 = TEXT
+					19 {
+						wrap = edgeFriction:|,
+						field = flexform_edgeFriction
+						fieldRequired = flexform_edgeFriction
+						if {
+							value = 0.15
+							equals.field = flexform_edgeFriction
+							negate = 1
+						}
+					}
+					20 = TEXT
+					20 {
+						value = infinite:false,
+						fieldRequired = flexform_infinite
+						if.isFalse.field = flexform_infinite
+					}
+					21 = TEXT
+					21 {
+						wrap = initialSlide:|,
+						field = flexform_initialSlide
+						fieldRequired = flexform_initialSlide
+					}
+					22 = TEXT
+					22 {
+						wrap = lazyLoad:'|',
+						field = flexform_lazyLoad
+						fieldRequired = flexform_lazyLoad
+						if {
+							value = ondemand
+							equals.field = flexform_lazyLoad
+							negate = 1
+						}
+					}
+					23 = TEXT
+					23 {
+						value = pauseOnHover:false,
+						fieldRequired = flexform_pauseOnHover
+						if.isFalse.field = flexform_pauseOnHover
+					}
+					24 = TEXT
+					24 {
+						wrap = pauseOnDotsHover:|,
+						field = flexform_pauseOnDotsHover
+						fieldRequired = flexform_pauseOnDotsHover
+					}
+					25 = TEXT
+					25 {
+						wrap = respondTo:'|',
+						field = flexform_respondTo
+						fieldRequired = flexform_respondTo
+						if {
+							value = window
+							equals.field = flexform_respondTo
+							negate = 1
+						}
+					}
+					26 = TEXT
+					26 {
+						wrap = responsive:|,
+						field = flexform_responsive
+						fieldRequired = flexform_responsive
+					}
+					27 = TEXT
+					27 {
+						wrap = rows:|,
+						field = flexform_rows
+						fieldRequired = flexform_rows
+						if {
+							value = 1
+							equals.field = flexform_rows
+							negate = 1
+						}
+					}
+					28 = TEXT
+					28 {
+						wrap = slide:|,
+						field = flexform_slide
+						fieldRequired = flexform_slide
+					}
+					29 = TEXT
+					29 {
+						wrap = slidesPerRow:|,
+						field = flexform_slidesPerRow
+						fieldRequired = flexform_slidesPerRow
+					}
+					30 = TEXT
+					30 {
+						wrap = slidesToShow:|,
+						field = flexform_slidesToShow
+						fieldRequired = flexform_slidesToShow
+						if {
+							value = 1
+							equals.field = flexform_slidesToShow
+							negate = 1
+						}
+					}
+					31 = TEXT
+					31 {
+						wrap = slidesToScroll:|,
+						field = flexform_slidesToScroll
+						fieldRequired = flexform_slidesToScroll
+						if {
+							value = 1
+							equals.field = flexform_slidesToScroll
+							negate = 1
+						}
+					}
+					32 = TEXT
+					32 {
+						wrap = speed:|,
+						field = flexform_speed
+						fieldRequired = flexform_speed
+						if {
+							value = 300
+							equals.field = flexform_speed
+							negate = 1
+						}
+					}
+					33 = TEXT
+					33 {
+						value = swipe:false,
+						fieldRequired = flexform_swipe
+						if.isFalse.field = flexform_swipe
+					}
+					34 = TEXT
+					34 {
+						wrap = swipeToSlide:|,
+						field = flexform_swipeToSlide
+						fieldRequired = flexform_swipeToSlide
+					}
+					35 = TEXT
+					35 {
+						value = touchMove:false,
+						fieldRequired = flexform_touchMove
+						if.isFalse.field = flexform_touchMove
+					}
+					36 = TEXT
+					36 {
+						wrap = touchThreshold:|,
+						field = flexform_touchThreshold
+						fieldRequired = flexform_touchThreshold
+						if {
+							value = 5
+							equals.field = flexform_touchThreshold
+							negate = 1
+						}
+					}
+					37 = TEXT
+					37 {
+						value = useCSS:false,
+						fieldRequired = flexform_useCSS
+						if.isFalse.field = flexform_swipe
+					}
+					38 = TEXT
+					38 {
+						wrap = variableWidth:|,
+						field = flexform_variableWidth
+						fieldRequired = flexform_variableWidth
+					}
+					39 = TEXT
+					39 {
+						wrap = vertical:|,
+						field = flexform_vertical
+						fieldRequired = flexform_vertical
+					}
+					40 = TEXT
+					40 {
+						wrap = verticalSwiping:|,
+						field = flexform_verticalSwiping
+						fieldRequired = flexform_verticalSwiping
+					}
+					41 = TEXT
+					41 {
+						wrap = rtl:|,
+						field = flexform_rtl
+						fieldRequired = flexform_rtl
+					}
+				}
+
+				40 = TEXT
+				40.value = });
+			}
+		}
+	}
+
+	# Slider
+	slider < lib.gridelements.defaultGridSetup
+	slider {
+		columns {
+			101 < .default
+			101.renderObj.wrap = <li>|</li>
+			101.wrap (
+				<div class="flexslider" id="flexslider{field:uid}">
+					<ul class="slides">|</ul>
+				</div>
+			)
+			101.insertData = 1
+		}
+
+		append = COA
+		append.wrap (
+			<script>
+			( function($) {
+				$(document).ready(function() {
+				|
+				});
+			}) (jQuery);
+			</script>
+		)
+		append {
+			10 = TEXT
+			10.value = $('#flexslider{field:uid}').flexslider(
+			10.insertData = 1
+
+			20 = TEXT
+			20.value = {
+
+			30 = TEXT
+			30.wrap = |
+			30.insertData = 1
+			30.value (
+				direction: "{field:flexform_direction}", 
+				slideshowSpeed: {field:flexform_slidespeed},
+				animation: "{field:flexform_animation}", 
+				animationSpeed: {field:flexform_animationspeed}, 
+				animationLoop: {field:flexform_animationloop}, 
+				useCSS: false,
+				controlNav: {field:flexform_showcontrolnav}, 
+				directionNav: {field:flexform_showdirnav}, 
+				pausePlay: {field:flexform_showpause}, 
+				pauseOnHover: {field:flexform_pauseonhover},
+				initDelay: {field:flexform_initdelay}, 
+				randomize: {field:flexform_randomize}, 
+				reverse: {field:flexform_reverse}
+			)
+			40 = TEXT
+			40.value = });
+		}
+	}
+
+	# simple row for content elements and usage with ext:bscolwrap
+	simpleRow < lib.gridelements.defaultGridSetup
+	simpleRow {
+		# row wrap
+		wrap = <div class="row">|</div>
+		columns {
+			# special 111, used as check for conditional fields
+			111 < .default
+			111.wrap = |
+		}
+	}
+}
+
+
+/**
+ * Assign foundation grid elements to gridelements extension
+ */
+tt_content.gridelements_pi1.20.10.setup {
+	2cols < lib.foundation_grids.2cols
+	3cols < lib.foundation_grids.3cols
+	4cols < lib.foundation_grids.4cols
+	accordion < lib.foundation_grids.accordion
+	slick < lib.foundation_grids.slick
+	slider < lib.foundation_grids.slider
+	tabsSimple < lib.foundation_grids.simpleTabs
+	tabs4 < lib.foundation_grids.4tabs
+	tabs6 < lib.foundation_grids.6tabs
+	xSimpleRow < lib.foundation_grids.simpleRow
+}
+
+
+/**
+ * CSS and JS for flexslider (content slider grid)
+ */
+page {
+	includeCSS {
+		flexslider2 = EXT:foundation_grids/Resources/Public/Flexslider2/flexslider.css
+	}
+	includeJSFooterlibs {
+		flexslider2 = EXT:foundation_grids/Resources/Public/Flexslider2/jquery.flexslider-min.js
+	}
+}
