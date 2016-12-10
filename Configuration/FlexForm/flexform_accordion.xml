@@ -7,11 +7,12 @@
 		<sDEF>
 			<ROOT type="array">
 				<TCEforms>
-					<sheetTitle>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
+					<sheetTitle>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.foundation5</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el type="array">
-					
+
+					<!-- Foundation 5 -->
 					<expandFirst>
 						<TCEforms>
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.accordion.expandFirst</label>
@@ -38,5 +39,31 @@
 				</el>
 			</ROOT>
 		</sDEF>
+		<foundation6>
+			<ROOT type="array">
+			<TCEforms>
+				<sheetTitle>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.foundation6</sheetTitle>
+			</TCEforms>
+			<type>array</type>
+			<el type="array">
+				<multiExpand>
+					<TCEforms>
+						<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.accordion.multiExpand</label>
+						<config>
+							<type>check</type>
+						</config>
+					</TCEforms>
+				</multiExpand>
+				<allClosed>
+					<TCEforms>
+						<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.accordion.allClosed</label>
+						<config>
+							<type>check</type>
+						</config>
+					</TCEforms>
+				</allClosed>
+			</el>
+			</ROOT>
+		</foundation6>
 	</sheets>
 </T3DataStructure>

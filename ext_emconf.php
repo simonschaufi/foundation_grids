@@ -10,31 +10,26 @@
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array (
+$EM_CONF[$_EXTKEY] = [
 	'title' => 'Grids for foundation',
 	'description' => 'Gridelements for ZURB foundation CSS Framework. Column grids, grids for simple accordions, tabs and content slider.',
 	'category' => 'misc',
-	'version' => '1.0.1',
+	'version' => '1.1.0',
 	'state' => 'stable',
 	'uploadfolder' => false,
 	'createDirs' => '',
 	'clearcacheonload' => true,
 	'author' => 'Simon Schaufelberger',
-	'author_email' => 'simonschaufi@gmail.com',
+	'author_email' => 'simonschaufi+typo3@gmail.com',
 	'author_company' => '',
-	'constraints' => 
-	array (
-		'depends' => 
-		array (
-			'typo3' => '6.2.0-7.5.99',
+	'constraints' => [
+		'depends' => [
+			'typo3' => '6.2.0-7.99.99',
 			'gridelements' => '3.0.0-0.0.0',
-		),
-		'conflicts' => 
-		array (
-		),
-		'suggests' => 
-		array (
-		),
-	),
-);
-
+		],
+		'conflicts' => [
+		],
+		'suggests' => [
+		],
+	],
+];

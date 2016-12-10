@@ -1,4 +1,10 @@
 <?php
-if (!defined ('TYPO3_MODE')) die ('Access denied.');
+defined('TYPO3_MODE') or die('Access denied.');
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:foundation_grids/Configuration/TypoScript/tsconfig.ts">');
+$boot = function ($_EXTKEY) {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+        '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TypoScript/TSConfig/pageTSConfig.ts">'
+    );
+};
+$boot($_EXTKEY);
+unset($boot);

@@ -1,5 +1,8 @@
 <?php
-if (!defined ('TYPO3_MODE')) die ('Access denied.');
+defined('TYPO3_MODE') or die('Access denied.');
 
-// Add static typoscript configurations
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Grids for Foundation');
+$boot = function ($_EXTKEY) {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Grids for Foundation');
+};
+$boot($_EXTKEY);
+unset($boot);

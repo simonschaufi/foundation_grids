@@ -169,6 +169,12 @@
 			<trans-unit id="grid.sheet.options" xml:space="preserve">
 				<source>Options</source>
 			</trans-unit>
+			<trans-unit id="grid.sheet.foundation5" xml:space="preserve">
+				<source>Foundation 5</source>
+			</trans-unit>
+			<trans-unit id="grid.sheet.foundation6" xml:space="preserve">
+				<source>Foundation 6</source>
+			</trans-unit>
 			<trans-unit id="grid.slider.direction" xml:space="preserve">
 				<source>Direction</source>
 			</trans-unit>
@@ -224,6 +230,12 @@
 			
 			<trans-unit id="grid.accordion.expandFirst" xml:space="preserve">
 				<source>Expand first item</source>
+			</trans-unit>
+			<trans-unit id="grid.accordion.multiExpand" xml:space="preserve">
+				<source>Multi-expand</source>
+			</trans-unit>
+			<trans-unit id="grid.accordion.allClosed" xml:space="preserve">
+				<source>All Closed</source>
 			</trans-unit>
 			
 			

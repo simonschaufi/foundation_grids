@@ -1,0 +1,78 @@
+lib.foundation_grids {
+	4tabs < lib.gridelements.defaultGridSetup
+	4tabs {
+		# style wrap
+		outerWrap = <div class="{field:flexform_style}">|</div>
+		outerWrap.insertData = 1
+
+		prepend = COA
+		prepend {
+			wrap = <ul class="nav nav-tabs" role="tablist">|</ul>
+			
+			10 = TEXT
+			10.value = <li class="active"><a href="#tab1-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle1}</a></li>
+			10.insertData = 1
+			
+			20 < .10
+			20.value = <li><a href="#tab2-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle2}</a></li>
+			20.if.isTrue.field = flexform_tabTitle2
+			
+			30 < .10
+			30.value = <li><a href="#tab3-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle3}</a></li>
+			30.if.isTrue.field = flexform_tabTitle3
+			
+			40 < .10
+			40.value = <li><a href="#tab4-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle4}</a></li>
+			40.if.isTrue.field = flexform_tabTitle4
+		}
+		wrap = <div class="tab-content">|</div>
+		columns {
+			101 < .default
+			101.wrap = <div class="tab-pane fade active in" id="tab1-{field:uid}">|</div>
+			101.wrap.insertData = 1
+			
+			102 < .101
+			102.wrap = <div class="tab-pane fade" id="tab2-{field:uid}">|</div>
+			102.if.isTrue.field = flexform_tabTitle2
+			
+			103 < .101
+			103.wrap = <div class="tab-pane fade" id="tab3-{field:uid}">|</div>
+			103.if.isTrue.field = flexform_tabTitle3
+			
+			104 < .101
+			104.wrap = <div class="tab-pane fade" id="tab4-{field:uid}">|</div>
+			104.if.isTrue.field = flexform_tabTitle4
+		}
+	}
+
+	6tabs < .4tabs
+	6tabs {
+		prepend {
+			50 < .10
+			50.value = <li><a href="#tab5-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle5}</a></li>
+			50.if.isTrue.field = flexform_tabTitle5
+
+			60 < .10
+			60.value = <li><a href="#tab6-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle6}</a></li>
+			60.if.isTrue.field = flexform_tabTitle6
+		}
+		columns {
+			105 < .101
+			105.wrap = <div class="tab-pane fade" id="tab5-{field:uid}">|</div>
+			105.if.isTrue.field = flexform_tabTitle5
+
+			106 < .101
+			106.wrap = <div class="tab-pane fade" id="tab6-{field:uid}">|</div>
+			106.if.isTrue.field = flexform_tabTitle6
+		}
+	}
+}
+
+
+/**
+ * Assign foundation grid elements to gridelements extension
+ */
+tt_content.gridelements_pi1.20.10.setup {
+	tabs4 < lib.foundation_grids.4tabs
+	tabs6 < lib.foundation_grids.6tabs
+}
