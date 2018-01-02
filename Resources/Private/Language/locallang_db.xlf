@@ -226,8 +226,8 @@
 			<trans-unit id="grid.slider.reverse" xml:space="preserve">
 				<source>Reverse order</source>
 			</trans-unit>
-			
-			
+
+
 			<trans-unit id="grid.accordion.expandFirst" xml:space="preserve">
 				<source>Expand first item</source>
 			</trans-unit>
@@ -237,8 +237,8 @@
 			<trans-unit id="grid.accordion.allClosed" xml:space="preserve">
 				<source>All Closed</source>
 			</trans-unit>
-			
-			
+
+
 			<trans-unit id="grid.slick.accessibility" xml:space="preserve">
 				<source>Enables tabbing and arrow key navigation</source>
 			</trans-unit>

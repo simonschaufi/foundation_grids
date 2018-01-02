@@ -23,7 +23,7 @@ lib.foundation_grids {
 			}) (jQuery);
 			</script>
 			)
-			
+
 			10 = TEXT
 			10.value = $('#flexslider{field:uid}').flexslider(
 			10.insertData = 1
@@ -35,18 +35,18 @@ lib.foundation_grids {
 			30.wrap = |
 			30.insertData = 1
 			30.value (
-				direction: "{field:flexform_direction}", 
+				direction: "{field:flexform_direction}",
 				slideshowSpeed: {field:flexform_slidespeed},
-				animation: "{field:flexform_animation}", 
-				animationSpeed: {field:flexform_animationspeed}, 
-				animationLoop: {field:flexform_animationloop}, 
+				animation: "{field:flexform_animation}",
+				animationSpeed: {field:flexform_animationspeed},
+				animationLoop: {field:flexform_animationloop},
 				useCSS: false,
-				controlNav: {field:flexform_showcontrolnav}, 
-				directionNav: {field:flexform_showdirnav}, 
-				pausePlay: {field:flexform_showpause}, 
+				controlNav: {field:flexform_showcontrolnav},
+				directionNav: {field:flexform_showdirnav},
+				pausePlay: {field:flexform_showpause},
 				pauseOnHover: {field:flexform_pauseonhover},
-				initDelay: {field:flexform_initdelay}, 
-				randomize: {field:flexform_randomize}, 
+				initDelay: {field:flexform_initdelay},
+				randomize: {field:flexform_randomize},
 				reverse: {field:flexform_reverse}
 			)
 			40 = TEXT
@@ -64,8 +64,8 @@ tt_content.gridelements_pi1.20.10.setup {
 }
 
 /**
-* CSS and JS for flexslider (content slider grid)
-*/
+ * CSS and JS for flexslider (content slider grid)
+ */
 page {
 	includeCSS {
 		flexslider2 = EXT:foundation_grids/Resources/Public/Flexslider2/flexslider.css
