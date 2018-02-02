@@ -10,7 +10,7 @@ lib.foundation_grids {
 			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class} column">|</div>
 		}
 	}
-	
+
 	3cols < .2cols
 	3cols {
 		columns {
@@ -20,7 +20,7 @@ lib.foundation_grids {
 			103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class} column">|</div>
 		}
 	}
-	
+
 	4cols < .3cols
 	4cols {
 		columns {

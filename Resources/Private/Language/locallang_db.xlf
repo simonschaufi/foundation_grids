@@ -3,434 +3,423 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-02-07T00:02:05Z" product-name="foundation_grids">
 		<header/>
 		<body>
-			<trans-unit id="2cols.title" xml:space="preserve">
+			<trans-unit id="2cols.title">
 				<source>2 columns</source>
 			</trans-unit>
-			<trans-unit id="2cols.description" xml:space="preserve">
+			<trans-unit id="2cols.description">
 				<source>Inserts a 2-columns grid for content. The width of each column may be set for different screen sizes.</source>
 			</trans-unit>
-			<trans-unit id="3cols.title" xml:space="preserve">
+			<trans-unit id="3cols.title">
 				<source>3 columns</source>
 			</trans-unit>
-			<trans-unit id="3cols.description" xml:space="preserve">
+			<trans-unit id="3cols.description">
 				<source>Inserts a 3-columns grid for content.</source>
 			</trans-unit>
-			<trans-unit id="4cols.title" xml:space="preserve">
+			<trans-unit id="4cols.title">
 				<source>4 columns</source>
 			</trans-unit>
-			<trans-unit id="4cols.description" xml:space="preserve">
+			<trans-unit id="4cols.description">
 				<source>Inserts a 4-columns grid for content.</source>
 			</trans-unit>
-			<trans-unit id="tabsSimple.title" xml:space="preserve">
+			<trans-unit id="tabsSimple.title">
 				<source>Tabs from content</source>
 			</trans-unit>
-			<trans-unit id="tabsSimple.description" xml:space="preserve">
+			<trans-unit id="tabsSimple.description">
 				<source>Each content element within the grid represents a tab. The title fields are used as tab titles.</source>
 			</trans-unit>
-			<trans-unit id="tabs4.title" xml:space="preserve">
+			<trans-unit id="tabs4.title">
 				<source>Tabs (4)</source>
 			</trans-unit>
-			<trans-unit id="tabs4.description" xml:space="preserve">
+			<trans-unit id="tabs4.description">
 				<source>For multiple content elements in one tab. 4 or less tabs.</source>
 			</trans-unit>
-			<trans-unit id="tabs6.title" xml:space="preserve">
+			<trans-unit id="tabs6.title">
 				<source>Tabs (6)</source>
 			</trans-unit>
-			<trans-unit id="tabs6.description" xml:space="preserve">
+			<trans-unit id="tabs6.description">
 				<source>For multiple content elements in one tab. 6 or less tabs.</source>
 			</trans-unit>
-			<trans-unit id="accordion.title" xml:space="preserve">
+			<trans-unit id="accordion.title">
 				<source>Accordion from content</source>
 			</trans-unit>
-			<trans-unit id="accordion.description" xml:space="preserve">
+			<trans-unit id="accordion.description">
 				<source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
 			</trans-unit>
-			<trans-unit id="slick.title" xml:space="preserve">
+			<trans-unit id="slick.title">
 				<source>Slick Carousel</source>
 			</trans-unit>
-			<trans-unit id="slick.description" xml:space="preserve">
+			<trans-unit id="slick.description">
 				<source>Each content element within the grid represents a slider element.</source>
 			</trans-unit>
-			<trans-unit id="slider.title" xml:space="preserve">
+			<trans-unit id="slider.title">
 				<source>Content slider</source>
 			</trans-unit>
-			<trans-unit id="slider.description" xml:space="preserve">
+			<trans-unit id="slider.description">
 				<source>Each content element within the grid represents a slider element.</source>
 			</trans-unit>
-
-			<trans-unit id="xSimpleRow.title" xml:space="preserve">
+			<trans-unit id="xSimpleRow.title">
 				<source>Row</source>
 			</trans-unit>
-			<trans-unit id="xSimpleRow.description" xml:space="preserve">
+			<trans-unit id="xSimpleRow.description">
 				<source>For use with responsive column width.</source>
 			</trans-unit>
-
-			<trans-unit id="celayout.leftColumn" xml:space="preserve">
+			<trans-unit id="celayout.leftColumn">
 				<source>Left column</source>
 			</trans-unit>
-			<trans-unit id="celayout.rightColumn" xml:space="preserve">
+			<trans-unit id="celayout.rightColumn">
 				<source>Right column</source>
 			</trans-unit>
-			<trans-unit id="celayout.centerColumn" xml:space="preserve">
+			<trans-unit id="celayout.centerColumn">
 				<source>Center column</source>
 			</trans-unit>
-			<trans-unit id="celayout.column2" xml:space="preserve">
+			<trans-unit id="celayout.column2">
 				<source>2nd column</source>
 			</trans-unit>
-			<trans-unit id="celayout.column3" xml:space="preserve">
+			<trans-unit id="celayout.column3">
 				<source>3rd column</source>
 			</trans-unit>
-			<trans-unit id="celayout.tabElements" xml:space="preserve">
+			<trans-unit id="celayout.tabElements">
 				<source>Tab elements</source>
 			</trans-unit>
-			<trans-unit id="celayout.tab1" xml:space="preserve">
+			<trans-unit id="celayout.tab1">
 				<source>Tab 1</source>
 			</trans-unit>
-			<trans-unit id="celayout.tab2" xml:space="preserve">
+			<trans-unit id="celayout.tab2">
 				<source>Tab 2</source>
 			</trans-unit>
-			<trans-unit id="celayout.tab3" xml:space="preserve">
+			<trans-unit id="celayout.tab3">
 				<source>Tab 3</source>
 			</trans-unit>
-			<trans-unit id="celayout.tab4" xml:space="preserve">
+			<trans-unit id="celayout.tab4">
 				<source>Tab 4</source>
 			</trans-unit>
-			<trans-unit id="celayout.tab5" xml:space="preserve">
+			<trans-unit id="celayout.tab5">
 				<source>Tab 5</source>
 			</trans-unit>
-			<trans-unit id="celayout.tab6" xml:space="preserve">
+			<trans-unit id="celayout.tab6">
 				<source>Tab 6</source>
 			</trans-unit>
-			<trans-unit id="celayout.accordionElements" xml:space="preserve">
+			<trans-unit id="celayout.accordionElements">
 				<source>Accordion elements</source>
 			</trans-unit>
-			<trans-unit id="celayout.slickElements" xml:space="preserve">
+			<trans-unit id="celayout.slickElements">
 				<source>Slider elements</source>
 			</trans-unit>
-			<trans-unit id="celayout.sliderElements" xml:space="preserve">
+			<trans-unit id="celayout.sliderElements">
 				<source>Slider elements</source>
 			</trans-unit>
-			<trans-unit id="celayout.columnElements" xml:space="preserve">
+			<trans-unit id="celayout.columnElements">
 				<source>Column elements</source>
 			</trans-unit>
-
-			<trans-unit id="grid.sheet.mediumDevices" xml:space="preserve">
+			<trans-unit id="grid.sheet.mediumDevices">
 				<source>Desktop (&gt;=992px)</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.smallDevices" xml:space="preserve">
+			<trans-unit id="grid.sheet.smallDevices">
 				<source>Small devices (&gt;=768px)</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.extraSmallDevices" xml:space="preserve">
+			<trans-unit id="grid.sheet.extraSmallDevices">
 				<source>Extra small (&lt;768px)</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.largeDevices" xml:space="preserve">
+			<trans-unit id="grid.sheet.largeDevices">
 				<source>Large (&gt;=1200px)</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.customClasses" xml:space="preserve">
+			<trans-unit id="grid.sheet.customClasses">
 				<source>Custom classes</source>
 			</trans-unit>
-			<trans-unit id="grid.label.col1" xml:space="preserve">
+			<trans-unit id="grid.label.col1">
 				<source>Column 1</source>
 			</trans-unit>
-			<trans-unit id="grid.label.col2" xml:space="preserve">
+			<trans-unit id="grid.label.col2">
 				<source>Column 2</source>
 			</trans-unit>
-			<trans-unit id="grid.label.col3" xml:space="preserve">
+			<trans-unit id="grid.label.col3">
 				<source>Column 3</source>
 			</trans-unit>
-			<trans-unit id="grid.label.col4" xml:space="preserve">
+			<trans-unit id="grid.label.col4">
 				<source>Column 4</source>
 			</trans-unit>
-			<trans-unit id="grid.label.moreWidth" xml:space="preserve">
+			<trans-unit id="grid.label.moreWidth">
 				<source>More width</source>
 			</trans-unit>
-			<trans-unit id="grid.label.notset" xml:space="preserve">
+			<trans-unit id="grid.label.notset">
 				<source>not set</source>
 			</trans-unit>
-			<trans-unit id="grid.label.moreOptions" xml:space="preserve">
+			<trans-unit id="grid.label.moreOptions">
 				<source>More options</source>
 			</trans-unit>
-			<trans-unit id="grid.label.special" xml:space="preserve">
+			<trans-unit id="grid.label.special">
 				<source>Special</source>
 			</trans-unit>
-			<trans-unit id="grid.label.hidden" xml:space="preserve">
+			<trans-unit id="grid.label.hidden">
 				<source>hidden</source>
 			</trans-unit>
-			<trans-unit id="grid.label.visible" xml:space="preserve">
+			<trans-unit id="grid.label.visible">
 				<source>visible</source>
 			</trans-unit>
-
-			<trans-unit id="grid.sheet.animation" xml:space="preserve">
+			<trans-unit id="grid.sheet.animation">
 				<source>Animation</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.controls" xml:space="preserve">
+			<trans-unit id="grid.sheet.controls">
 				<source>Controls</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.options" xml:space="preserve">
+			<trans-unit id="grid.sheet.options">
 				<source>Options</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.foundation5" xml:space="preserve">
+			<trans-unit id="grid.sheet.foundation5">
 				<source>Foundation 5</source>
 			</trans-unit>
-			<trans-unit id="grid.sheet.foundation6" xml:space="preserve">
+			<trans-unit id="grid.sheet.foundation6">
 				<source>Foundation 6</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.direction" xml:space="preserve">
+			<trans-unit id="grid.slider.direction">
 				<source>Direction</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.direction.1" xml:space="preserve">
+			<trans-unit id="grid.slider.direction.1">
 				<source>vertical</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.direction.2" xml:space="preserve">
+			<trans-unit id="grid.slider.direction.2">
 				<source>horizontal</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.speed" xml:space="preserve">
+			<trans-unit id="grid.slider.speed">
 				<source>Slideshow speed</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.animation" xml:space="preserve">
+			<trans-unit id="grid.slider.animation">
 				<source>Animation</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.animation.1" xml:space="preserve">
+			<trans-unit id="grid.slider.animation.1">
 				<source>fade</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.animation.2" xml:space="preserve">
+			<trans-unit id="grid.slider.animation.2">
 				<source>slide</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.animationspeed" xml:space="preserve">
+			<trans-unit id="grid.slider.animationspeed">
 				<source>Animation speed</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.style" xml:space="preserve">
+			<trans-unit id="grid.slider.style">
 				<source>Style</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.showcontrolnav" xml:space="preserve">
+			<trans-unit id="grid.slider.showcontrolnav">
 				<source>Show control navigation</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.showdirnav" xml:space="preserve">
+			<trans-unit id="grid.slider.showdirnav">
 				<source>Show direction navigation</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.showpause" xml:space="preserve">
+			<trans-unit id="grid.slider.showpause">
 				<source>Show pause button</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.pauseonhover" xml:space="preserve">
+			<trans-unit id="grid.slider.pauseonhover">
 				<source>Pause on hover</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.initdelay" xml:space="preserve">
+			<trans-unit id="grid.slider.initdelay">
 				<source>Init delay</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.randomize" xml:space="preserve">
+			<trans-unit id="grid.slider.randomize">
 				<source>Randomize</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.animationloop" xml:space="preserve">
+			<trans-unit id="grid.slider.animationloop">
 				<source>Loop</source>
 			</trans-unit>
-			<trans-unit id="grid.slider.reverse" xml:space="preserve">
+			<trans-unit id="grid.slider.reverse">
 				<source>Reverse order</source>
 			</trans-unit>
-
-
-			<trans-unit id="grid.accordion.expandFirst" xml:space="preserve">
+			<trans-unit id="grid.accordion.expandFirst">
 				<source>Expand first item</source>
 			</trans-unit>
-			<trans-unit id="grid.accordion.multiExpand" xml:space="preserve">
+			<trans-unit id="grid.accordion.multiExpand">
 				<source>Multi-expand</source>
 			</trans-unit>
-			<trans-unit id="grid.accordion.allClosed" xml:space="preserve">
+			<trans-unit id="grid.accordion.allClosed">
 				<source>All Closed</source>
 			</trans-unit>
-
-
-			<trans-unit id="grid.slick.accessibility" xml:space="preserve">
+			<trans-unit id="grid.slick.accessibility">
 				<source>Enables tabbing and arrow key navigation</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.adaptiveHeight" xml:space="preserve">
+			<trans-unit id="grid.slick.adaptiveHeight">
 				<source>Enables adaptive height for single slide horizontal carousels.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.autoplay" xml:space="preserve">
+			<trans-unit id="grid.slick.autoplay">
 				<source>Enables Autoplay</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.autoplaySpeed" xml:space="preserve">
+			<trans-unit id="grid.slick.autoplaySpeed">
 				<source>Autoplay Speed in milliseconds</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.arrows" xml:space="preserve">
+			<trans-unit id="grid.slick.arrows">
 				<source>Prev/Next Arrows</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.asNavFor" xml:space="preserve">
+			<trans-unit id="grid.slick.asNavFor">
 				<source>Set the slider to be the navigation of other slider (Class or ID Name)</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.appendArrows" xml:space="preserve">
+			<trans-unit id="grid.slick.appendArrows">
 				<source>Change where the navigation arrows are attached (Selector, htmlString, Array, Element, jQuery object)</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.prevArrow" xml:space="preserve">
+			<trans-unit id="grid.slick.prevArrow">
 				<source>Allows you to select a node or customize the HTML for the "Previous" arrow.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.nextArrow" xml:space="preserve">
+			<trans-unit id="grid.slick.nextArrow">
 				<source>Allows you to select a node or customize the HTML for the "Next" arrow.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.centerMode" xml:space="preserve">
+			<trans-unit id="grid.slick.centerMode">
 				<source>Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.centerPadding" xml:space="preserve">
+			<trans-unit id="grid.slick.centerPadding">
 				<source>Side padding when in center mode (px or %)</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.cssEase" xml:space="preserve">
+			<trans-unit id="grid.slick.cssEase">
 				<source>CSS3 Animation Easing</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.customPaging" xml:space="preserve">
+			<trans-unit id="grid.slick.customPaging">
 				<source>Custom paging templates. See source for use example.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.dots" xml:space="preserve">
+			<trans-unit id="grid.slick.dots">
 				<source>Show dot indicators</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.draggable" xml:space="preserve">
+			<trans-unit id="grid.slick.draggable">
 				<source>Enable mouse dragging</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.fade" xml:space="preserve">
+			<trans-unit id="grid.slick.fade">
 				<source>Enable fade</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.focusOnSelect" xml:space="preserve">
+			<trans-unit id="grid.slick.focusOnSelect">
 				<source>Enable focus on selected element (click)</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.easing" xml:space="preserve">
+			<trans-unit id="grid.slick.easing">
 				<source>Add easing for jQuery animate. Use with easing libraries or default easing methods</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.edgeFriction" xml:space="preserve">
+			<trans-unit id="grid.slick.edgeFriction">
 				<source>Resistance when swiping edges of non-infinite carousels</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.infinite" xml:space="preserve">
+			<trans-unit id="grid.slick.infinite">
 				<source>Infinite loop sliding</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.initialSlide" xml:space="preserve">
+			<trans-unit id="grid.slick.initialSlide">
 				<source>Slide to start on</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.lazyLoad" xml:space="preserve">
+			<trans-unit id="grid.slick.lazyLoad">
 				<source>Set lazy loading technique. Accepts 'ondemand' or 'progressive'</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.lazyLoad.ondemand" xml:space="preserve">
+			<trans-unit id="grid.slick.lazyLoad.ondemand">
 				<source>on demand</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.lazyLoad.progressive" xml:space="preserve">
+			<trans-unit id="grid.slick.lazyLoad.progressive">
 				<source>progressive</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.mobileFirst" xml:space="preserve">
+			<trans-unit id="grid.slick.mobileFirst">
 				<source>Responsive settings use mobile first calculation</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.pauseOnHover" xml:space="preserve">
+			<trans-unit id="grid.slick.pauseOnHover">
 				<source>Pause Autoplay On Hover</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.pauseOnDotsHover" xml:space="preserve">
+			<trans-unit id="grid.slick.pauseOnDotsHover">
 				<source>Pause Autoplay when a dot is hovered</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.respondTo" xml:space="preserve">
+			<trans-unit id="grid.slick.respondTo">
 				<source>Width that responsive object responds to. Can be 'window', 'slider' or 'min' (the smaller of the two)</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.respondTo.window" xml:space="preserve">
+			<trans-unit id="grid.slick.respondTo.window">
 				<source>window</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.respondTo.slider" xml:space="preserve">
+			<trans-unit id="grid.slick.respondTo.slider">
 				<source>slider</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.respondTo.min" xml:space="preserve">
+			<trans-unit id="grid.slick.respondTo.min">
 				<source>min</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.responsive" xml:space="preserve">
+			<trans-unit id="grid.slick.responsive">
 				<source>Object containing breakpoints and settings objects (see demo). Enables settings sets at given screen width. Set settings to "unslick" instead of an object to disable slick at a given breakpoint.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.rows" xml:space="preserve">
+			<trans-unit id="grid.slick.rows">
 				<source>Setting this to more than 1 initializes grid mode. Use slidesPerRow to set how many slides should be in each row.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.slide" xml:space="preserve">
+			<trans-unit id="grid.slick.slide">
 				<source>Element query to use as slide</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.slidesPerRow" xml:space="preserve">
+			<trans-unit id="grid.slick.slidesPerRow">
 				<source>With grid mode intialized via the rows option, this sets how many slides are in each grid row.</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.slidesToShow" xml:space="preserve">
+			<trans-unit id="grid.slick.slidesToShow">
 				<source># of slides to show</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.slidesToScroll" xml:space="preserve">
+			<trans-unit id="grid.slick.slidesToScroll">
 				<source># of slides to scroll</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.speed" xml:space="preserve">
+			<trans-unit id="grid.slick.speed">
 				<source>Slide/Fade animation speed</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.swipe" xml:space="preserve">
+			<trans-unit id="grid.slick.swipe">
 				<source>Enable swiping</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.swipeToSlide" xml:space="preserve">
+			<trans-unit id="grid.slick.swipeToSlide">
 				<source>Allow users to drag or swipe directly to a slide irrespective of slidesToScroll</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.touchMove" xml:space="preserve">
+			<trans-unit id="grid.slick.touchMove">
 				<source>Enable slide motion with touch</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.touchThreshold" xml:space="preserve">
+			<trans-unit id="grid.slick.touchThreshold">
 				<source>To advance slides, the user must swipe a length of (1/touchThreshold) * the width of the slider</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.useCSS" xml:space="preserve">
+			<trans-unit id="grid.slick.useCSS">
 				<source>Enable/Disable CSS Transitions</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.variableWidth" xml:space="preserve">
+			<trans-unit id="grid.slick.variableWidth">
 				<source>Variable width slides</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.vertical" xml:space="preserve">
+			<trans-unit id="grid.slick.vertical">
 				<source>Vertical slide mode</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.verticalSwiping" xml:space="preserve">
+			<trans-unit id="grid.slick.verticalSwiping">
 				<source>Vertical swipe mode</source>
 			</trans-unit>
-			<trans-unit id="grid.slick.rtl" xml:space="preserve">
+			<trans-unit id="grid.slick.rtl">
 				<source>Change the slider's direction to become right-to-left</source>
 			</trans-unit>
-
-			<trans-unit id="grid.sheet.layout" xml:space="preserve">
+			<trans-unit id="grid.sheet.layout">
 				<source>Layout</source>
 			</trans-unit>
-			<trans-unit id="grid.label.style" xml:space="preserve">
+			<trans-unit id="grid.label.style">
 				<source>Style</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabStyle" xml:space="preserve">
+			<trans-unit id="grid.label.tabStyle">
 				<source>Style</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabStyle.0" xml:space="preserve">
+			<trans-unit id="grid.label.tabStyle.0">
 				<source>Style 1</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabStyle.1" xml:space="preserve">
+			<trans-unit id="grid.label.tabStyle.1">
 				<source>Style 2</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle1" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle1">
 				<source>Title 1</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle2" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle2">
 				<source>Title 2</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle3" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle3">
 				<source>Title 3</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle4" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle4">
 				<source>Title 4</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle5" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle5">
 				<source>Title 5</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle6" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle6">
 				<source>Title 6</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle7" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle7">
 				<source>Title 7</source>
 			</trans-unit>
-			<trans-unit id="grid.label.tabTitle8" xml:space="preserve">
+			<trans-unit id="grid.label.tabTitle8">
 				<source>Title 8</source>
 			</trans-unit>
-
-			<trans-unit id="grid.label.none" xml:space="preserve">
+			<trans-unit id="grid.label.none">
 				<source>none</source>
 			</trans-unit>
-			<trans-unit id="grid.label.yes" xml:space="preserve">
+			<trans-unit id="grid.label.yes">
 				<source>yes</source>
 			</trans-unit>
-			<trans-unit id="grid.label.no" xml:space="preserve">
+			<trans-unit id="grid.label.no">
 				<source>no</source>
 			</trans-unit>
-
 		</body>
 	</file>
 </xliff>

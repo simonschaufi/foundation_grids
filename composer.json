@@ -12,7 +12,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Simonschaufi\\FoundationGrids\\": "Classes/"
+			"SimonSchaufi\\FoundationGrids\\": "Classes/"
 		}
 	},
 	"replace": {

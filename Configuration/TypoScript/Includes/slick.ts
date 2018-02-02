@@ -16,18 +16,18 @@ lib.foundation_grids {
 			$(document).ready(function() {|});
 			}) (jQuery);
 			)
-	
+
 			10 = TEXT
 			10 {
 				field = uid
 				wrap = $('#slickslider|').slick({
 			}
-	
+
 			30 = COA
 			30 {
 				# https://forge.typo3.org/issues/70483
 				stdWrap.substring = 0,-1
-		
+
 				1 = TEXT
 				1 {
 					wrap = accessibility:|,
@@ -277,7 +277,7 @@ lib.foundation_grids {
 					fieldRequired = flexform_rtl
 				}
 			}
-	
+
 			40 = TEXT
 			40.value = });
 		}

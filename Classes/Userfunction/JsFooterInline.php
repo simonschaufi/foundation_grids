@@ -1,6 +1,6 @@
 <?php
 
-namespace Simonschaufi\FoundationGrids\Userfunction;
+namespace SimonSchaufi\FoundationGrids\Userfunction;
 
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;

@@ -30,14 +30,14 @@ lib.foundation_grids {
 					stdWrap.outerWrap.cObject = CASE
 					stdWrap.outerWrap.cObject {
 						key < plugin.tx_foundationgrids.settings.foundationVersion
-					
+
 						5 = TEXT
 						5.value = <li class="accordion-navigation">|</li>
 
 						default = TEXT
 						default {
 							value = <li class="accordion-item" data-accordion-item>|</li>
-							override = <li class="accordion-item is-active" data-accordion-item>|</li> 
+							override = <li class="accordion-item is-active" data-accordion-item>|</li>
 							override {
 								if {
 									# value from parent flexform field
