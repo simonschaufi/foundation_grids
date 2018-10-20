@@ -68,7 +68,6 @@ lib.foundation_grids {
 	}
 }
 
-
 /**
  * Assign foundation grid elements to gridelements extension
  */

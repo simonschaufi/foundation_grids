@@ -4,4 +4,4 @@ Predefined gridelements for foundation: Column grids, grids for simple accordion
 
 ## More information
 
-Please follow the documentation found at http://docs.typo3.org/typo3cms/extensions/foundation_grids/
+Please follow the documentation found at https://docs.typo3.org/typo3cms/extensions/foundation_grids/

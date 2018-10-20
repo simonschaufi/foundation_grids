@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
 	'title' => 'Grids for foundation',
 	'description' => 'Gridelements for ZURB foundation CSS Framework. Column grids, grids for simple accordions, tabs and content slider.',
 	'category' => 'misc',
-	'version' => '1.2.0',
+	'version' => '2.0.0',
 	'state' => 'stable',
 	'uploadfolder' => false,
 	'createDirs' => '',
@@ -24,8 +24,8 @@ $EM_CONF[$_EXTKEY] = [
 	'author_company' => '',
 	'constraints' => [
 		'depends' => [
-			'typo3' => '6.2.0-8.99.99',
-			'gridelements' => '3.0.0-0.0.0',
+			'typo3' => '7.6.0-8.99.99',
+			'gridelements' => '7.0.0-0.0.0',
 		],
 		'conflicts' => [
 		],

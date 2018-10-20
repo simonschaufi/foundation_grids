@@ -7,4 +7,4 @@ tx_gridelements {
 	#excludeLayoutIds = 3,slider
 }
 
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:foundation_grids/Configuration/TypoScript/TSConfig/Includes" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:foundation_grids/Configuration/TypoScript/TSConfig/Includes" extensions="typoscript">

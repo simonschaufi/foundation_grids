@@ -13,4 +13,4 @@ lib.gridelements.defaultGridSetup.columns.2 >
 /**
  * Grid definitions
  */
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:foundation_grids/Configuration/TypoScript/Includes" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:foundation_grids/Configuration/TypoScript/Includes" extensions="typoscript">

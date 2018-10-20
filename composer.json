@@ -8,7 +8,8 @@
 	"keywords": ["TYPO3 CMS", "Gridelements"],
 	"require": {
 		"php": ">=7.0.0",
-		"typo3/cms-core": "^7.6.0 || ^8.7.0"
+		"typo3/cms-core": "^7.6.0 || ^8.7.0",
+		"gridelementsteam/gridelements": ">=7.0"
 	},
 	"autoload": {
 		"psr-4": {
