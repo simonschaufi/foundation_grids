@@ -11,7 +11,6 @@
 				</TCEforms>
 				<type>array</type>
 				<el type="array">
-
 					<accessibility type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.accessibility</label>
@@ -21,7 +20,6 @@
 							</config>
 						</TCEforms>
 					</accessibility>
-					
 					<adaptiveHeight type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.adaptiveHeight</label>
@@ -30,7 +28,6 @@
 							</config>
 						</TCEforms>
 					</adaptiveHeight>
-					
 					<autoplay type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.autoplay</label>
@@ -39,7 +36,6 @@
 							</config>
 						</TCEforms>
 					</autoplay>
-					
 					<autoplaySpeed type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.autoplaySpeed</label>
@@ -51,7 +47,6 @@
 							</config>
 						</TCEforms>
 					</autoplaySpeed>
-					
 					<arrows type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.arrows</label>
@@ -61,7 +56,6 @@
 							</config>
 						</TCEforms>
 					</arrows>
-					
 					<asNavFor type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.asNavFor</label>
@@ -71,7 +65,6 @@
 							</config>
 						</TCEforms>
 					</asNavFor>
-					
 					<appendArrows type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.appendArrows</label>
@@ -81,7 +74,6 @@
 							</config>
 						</TCEforms>
 					</appendArrows>
-					
 					<prevArrow type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.prevArrow</label>
@@ -91,7 +83,6 @@
 							</config>
 						</TCEforms>
 					</prevArrow>
-					
 					<nextArrow type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.nextArrow</label>
@@ -101,7 +92,6 @@
 							</config>
 						</TCEforms>
 					</nextArrow>
-					
 					<centerMode type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.centerMode</label>
@@ -110,7 +100,6 @@
 							</config>
 						</TCEforms>
 					</centerMode>
-					
 					<centerPadding type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.centerPadding</label>
@@ -120,7 +109,6 @@
 							</config>
 						</TCEforms>
 					</centerPadding>
-					
 					<cssEase type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.cssEase</label>
@@ -130,7 +118,6 @@
 							</config>
 						</TCEforms>
 					</cssEase>
-					
 					<customPaging type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.customPaging</label>
@@ -140,7 +127,6 @@
 							</config>
 						</TCEforms>
 					</customPaging>
-					
 					<dots type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.dots</label>
@@ -149,7 +135,6 @@
 							</config>
 						</TCEforms>
 					</dots>
-					
 					<draggable type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.draggable</label>
@@ -159,7 +144,6 @@
 							</config>
 						</TCEforms>
 					</draggable>
-					
 					<fade type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.fade</label>
@@ -168,7 +152,6 @@
 							</config>
 						</TCEforms>
 					</fade>
-					
 					<focusOnSelect type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.focusOnSelect</label>
@@ -177,7 +160,6 @@
 							</config>
 						</TCEforms>
 					</focusOnSelect>
-					
 					<easing type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.easing</label>
@@ -187,7 +169,6 @@
 							</config>
 						</TCEforms>
 					</easing>
-					
 					<edgeFriction type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.edgeFriction</label>
@@ -199,7 +180,6 @@
 							</config>
 						</TCEforms>
 					</edgeFriction>
-
 					<infinite type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.infinite</label>
@@ -209,7 +189,6 @@
 							</config>
 						</TCEforms>
 					</infinite>
-
 					<initialSlide type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.initialSlide</label>
@@ -221,7 +200,6 @@
 							</config>
 						</TCEforms>
 					</initialSlide>
-					
 					<lazyLoad type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.lazyLoad</label>
@@ -240,7 +218,6 @@
 							</config>
 						</TCEforms>
 					</lazyLoad>
-					
 					<mobileFirst type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.mobileFirst</label>
@@ -249,7 +226,6 @@
 							</config>
 						</TCEforms>
 					</mobileFirst>
-					
 					<pauseOnHover type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.pauseOnHover</label>
@@ -259,7 +235,6 @@
 							</config>
 						</TCEforms>
 					</pauseOnHover>
-					
 					<pauseOnDotsHover type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.pauseOnDotsHover</label>
@@ -268,7 +243,6 @@
 							</config>
 						</TCEforms>
 					</pauseOnDotsHover>
-					
 					<respondTo type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.respondTo</label>
@@ -291,7 +265,6 @@
 							</config>
 						</TCEforms>
 					</respondTo>
-					
 					<responsive type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.responsive</label>
@@ -301,7 +274,6 @@
 							</config>
 						</TCEforms>
 					</responsive>
-					
 					<rows type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.rows</label>
@@ -324,7 +296,6 @@
 							</config>
 						</TCEforms>
 					</rows>
-					
 					<slide type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.slide</label>
@@ -335,7 +306,6 @@
 							</config>
 						</TCEforms>
 					</slide>
-					
 					<slidesPerRow type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.slidesPerRow</label>
@@ -348,7 +318,6 @@
 							</config>
 						</TCEforms>
 					</slidesPerRow>
-					
 					<slidesToShow type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.slidesToShow</label>
@@ -360,7 +329,6 @@
 							</config>
 						</TCEforms>
 					</slidesToShow>
-					
 					<slidesToScroll type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.slidesToScroll</label>
@@ -372,7 +340,6 @@
 							</config>
 						</TCEforms>
 					</slidesToScroll>
-					
 					<speed type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.speed</label>
@@ -384,7 +351,6 @@
 							</config>
 						</TCEforms>
 					</speed>
-					
 					<swipe type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.swipe</label>
@@ -394,7 +360,6 @@
 							</config>
 						</TCEforms>
 					</swipe>
-					
 					<swipeToSlide type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.swipeToSlide</label>
@@ -403,7 +368,6 @@
 							</config>
 						</TCEforms>
 					</swipeToSlide>
-					
 					<touchMove type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.touchMove</label>
@@ -413,7 +377,6 @@
 							</config>
 						</TCEforms>
 					</touchMove>
-					
 					<touchThreshold type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.touchThreshold</label>
@@ -425,7 +388,6 @@
 							</config>
 						</TCEforms>
 					</touchThreshold>
-					
 					<useCSS type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.useCSS</label>
@@ -435,7 +397,6 @@
 							</config>
 						</TCEforms>
 					</useCSS>
-					
 					<variableWidth type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.variableWidth</label>
@@ -444,7 +405,6 @@
 							</config>
 						</TCEforms>
 					</variableWidth>
-					
 					<vertical type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.vertical</label>
@@ -453,7 +413,6 @@
 							</config>
 						</TCEforms>
 					</vertical>
-					
 					<verticalSwiping type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.verticalSwiping</label>
@@ -462,7 +421,6 @@
 							</config>
 						</TCEforms>
 					</verticalSwiping>
-					
 					<rtl type="array">
 						<TCEforms type="array">
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.slick.rtl</label>
@@ -471,7 +429,6 @@
 							</config>
 						</TCEforms>
 					</rtl>
-					
 				</el>
 			</ROOT>
 		</sDEF>
@@ -482,7 +439,6 @@
 				</TCEforms>
 				<type>array</type>
 				<el type="array">
-					
 				</el>
 			</ROOT>
 		</scontrols>
@@ -493,7 +449,6 @@
 				</TCEforms>
 				<type>array</type>
 				<el type="array">
-					
 				</el>
 			</ROOT>
 		</soptions>

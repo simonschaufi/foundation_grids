@@ -21,7 +21,7 @@
 							</config>
 						</TCEforms>
 					</expandFirst>
-					
+
 					<!--<rowclass>
 						<TCEforms>
 							<label>LLL:EXT:foundation_grids/Resources/Private/Language/locallang_db.xlf:grid.label.style</label>
