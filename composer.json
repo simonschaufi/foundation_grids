@@ -2,9 +2,7 @@
 	"name": "simonschaufi/foundation-grids",
 	"type": "typo3-cms-extension",
 	"description": "Gridelements for ZURB foundation CSS Framework",
-	"license": [
-		"GPL-2.0-or-later"
-	],
+	"license": "GPL-2.0-or-later",
 	"keywords": ["TYPO3 CMS", "Gridelements"],
 	"require": {
 		"php": ">=7.0.0",
@@ -17,7 +15,6 @@
 		}
 	},
 	"replace": {
-		"foundation_grids": "self.version",
 		"typo3-ter/foundation-grids": "self.version"
 	},
 	"extra": {
